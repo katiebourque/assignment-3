@@ -27,8 +27,21 @@ html {
     left: 200px;
     width: 100px;
     height: 100px;
-
+    -webkit-animation: spin 8s ease-in-out infinite alternate;
+	animation: spin 8s ease-in-out infinite alternate;
 }
+
+
+@-webkit-keyframes spin {
+	0% {-webkit-transform: translate(0px) rotate(0deg);}
+
+	33% {-webkit-transform: translate(5px, 5px);}
+
+	66% {-webkit-transform: translate(-5px,-5px);}
+
+	100% {-webkit-transform: rotate(360deg);}
+}
+
 
 .ship {
 	    position: absolute;
